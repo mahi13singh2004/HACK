@@ -319,6 +319,11 @@ hr {
   margin-top: 10px;
 }
 
+.items-a{
+    color:black;
+    text-decoration: none;
+}
+
 .query-btn {
   margin-top: 20px;
   background-color: #3498db;
