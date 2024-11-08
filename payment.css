@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    background-color:#f7f7f7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1f242d;
+  padding: 25px;
+}
+
+.container form {
+  width: 700px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+form .row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%; /* Ensure the row does not overflow */
+}
+
+.row .column {
+  flex: 1 1 250px;
+  padding: 10px; /* Padding for better spacing */
+  box-sizing: border-box; /* Prevent overlap */
+}
+
+.column .title {
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.column .input-box {
+  margin: 15px 0;
+}
+
+.input-box span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box; /* Prevent overflow issues */
+}
+
+.column .flex {
+  display: flex;
+  gap: 15px;
+  width: 100%; /* Ensure no overflow in flex container */
+}
+
+.flex .input-box {
+  margin-top: 5px;
+  width: 50%; /* Make the two input boxes share space equally */
+}
+
+.input-box img {
+  height: 30px;
+  margin-top: 4px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.cancelPayment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 0 0;
+}
+
+.cancel {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Ensure the submit button doesn't overflow */
+form .btn {
+  width: 100%;
+  padding: 12px;
+  background: #8175d3;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 17px;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+form .btn:hover {
+  background-color: #6a5acd;
+}
+
+/* For small screens, adjust the column layout */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .column {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px; /* Add spacing between stacked columns */
+  }
+
+  .cancelPayment {
+    justify-content: center;
+    padding-top: 15px;
+  }
+}

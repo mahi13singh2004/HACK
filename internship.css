@@ -1,10 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -13,9 +11,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width:100vw;
+  width: 100vw;
 }
-
 
 .interconti {
   padding: 20px;
@@ -62,37 +59,32 @@ body {
   color: red;
 }
 
-
 .heading {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-top:20px;
+  margin-top: 20px;
 }
-
 
 .cardinten {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  width: calc(4 * 300px + 20px);
 }
 
+.cards-container {
+  display: flex;
+  transition: transform 3s ease-in-out;
+}
 
 .card {
+  width: 300px;
+  margin-right: 20px;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px;
-  margin: 10px;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -140,7 +132,6 @@ body {
   background-color: #d62828;
 }
 
-
 .contact-footer {
   background-color: #25318d;
   padding: 40px 0;
@@ -154,12 +145,10 @@ body {
   padding: 0 20px;
 }
 
-
 .footer h1 {
   font-size: 1.5rem;
   margin-bottom: 24px;
 }
-
 
 .contact-fields {
   display: flex;
@@ -194,7 +183,6 @@ body {
   outline: none;
 }
 
-
 .submit-button {
   display: flex;
   justify-content: center;
@@ -214,7 +202,6 @@ body {
 .submit-button button:hover {
   background-color: #1a2d7a;
 }
-
 
 .contact-info {
   margin-bottom: 16px;
@@ -241,6 +228,12 @@ body {
 .footer-info a {
   text-decoration: underline;
 }
+.light-hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);  
+  margin: 20px 0;  
+}
+
 
 .footer-info .separator {
   margin: 0 8px;
@@ -256,7 +249,6 @@ body {
   display: inline-block;
   margin-right: 12px;
 }
-
 
 @media (max-width: 768px) {
   .contact-fields .input-column {
@@ -312,28 +304,3 @@ body {
       display: none;
   }
 }
-
-
-.go-top {
-  text-align: center;
-  margin-top: 25px;
-}
-
-.styling a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.t-top:hover {
-  background-color: #222;
-}
-
-
-.contact-h {
-  margin-bottom: 20px;
-}
-

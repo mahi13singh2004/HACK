@@ -23,6 +23,10 @@ ul {
   list-style: none;
 }
 
+.styling a{
+  text-decoration: none;
+}
+
 .header {
   background-color: #333;
   padding: 15px 0;
@@ -30,11 +34,15 @@ ul {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.items a{
+  text-decoration: none;
 }
 
 .nav .logo img {
@@ -66,6 +74,7 @@ ul {
   width: 100%;
   height: 500px;
   object-fit: cover;
+  opacity: 0.7;
 }
 
 .middle-bottom {
@@ -81,15 +90,16 @@ ul {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 20px;
-}
-
-.master-text {
-  color: #f39c12;
+  color:black;
+  font-family: "Playfair", serif;
+  font-weight:900
 }
 
 .middle-text {
   font-size: 18px;
   line-height: 1.6;
+  color:black;
+  font-size: 25px
 }
 
 .text-btn a {
@@ -97,7 +107,7 @@ ul {
   padding: 10px 30px;
   background-color: #e74c3c;
   color: white;
-  font-size: 18px;
+  font-size: 18px;;
   margin-top: 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -115,16 +125,25 @@ ul {
 }
 
 .service-text h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .service-para {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.8;
   color: #555;
   margin-bottom: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.card1 h2{
+  font-weight:700;
+}
+
+.card1 p{
+  font-weight:600;
 }
 
 .service-cards {
@@ -139,6 +158,7 @@ ul {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .card1 h2 {
@@ -166,6 +186,8 @@ ul {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 20px;
+  text-align:center;
+  text-decoration: underline;
 }
 
 .team-cards {
@@ -187,6 +209,8 @@ ul {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
+  padding: 35px;
+  border-radius: 70px;
 }
 
 .team-card:hover {
@@ -198,6 +222,10 @@ ul {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
 }
 
 /* Carousel */
@@ -206,42 +234,78 @@ ul {
   position: relative;
 }
 
+.team-text p{
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size:20px
+}
+
 .carousel-item .carousel-caption {
   font-size: 18px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 20px;
   border-radius: 5px;
 }
 
-/* Query Section */
+.carousel-item .carousel-caption p{
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-size:24px;
+  margin-top:9px;
+  color:#1f1e1e;
+}
+
+
+.carousel-item .carousel-caption h2{
+  color: #5c5858;
+  font-weight:900;
+}
+
 .query {
   padding: 50px 20px;
-  background-color: #e74c3c;
+  background-color: #b6c8e0;
   text-align: center;
   color: white;
+}
+
+.query-btn p a{
+  text-decoration: none;
 }
 
 .query-h2 {
   font-size: 36px;
   font-weight: 700;
+  color: #5c5858;
 }
 
 .query-p {
   font-size: 18px;
   margin-top: 20px;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  word-spacing: 6px;
+  font-size: 22px;
+  color:black
 }
 
 .query-btn p {
-  background-color: #fff;
-  color: #e74c3c;
+  background-color: #f39c12;
+  color: white;
   font-size: 20px;
   padding: 12px 40px;
   margin-top: 30px;
   border-radius: 5px;
   display: inline-block;
   transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+contact-h{
+  text-align: center;
+}
+
+.footer-container h1{
+  font-weight:900;
 }
 
 .query-btn p:hover {
