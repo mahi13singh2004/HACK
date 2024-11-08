@@ -1,20 +1,20 @@
-const cardsContainer = document.querySelector('.cards-container');
+const crdcontain = document.querySelector('.cards-container');
 const cardWidth = document.querySelector('.card').offsetWidth + 20;
 
 function slideCards() {
-  cardsContainer.style.transition = 'transform 5s ease-in-out';
-  cardsContainer.style.transform = `translateX(-${cardWidth}px)`;
+  crdcontain.style.transition = 'transform 5s ease-in-out';
+  crdcontain.style.transform = `translateX(-${cardWidth}px)`;
 }
 
 function handleLoop() {
-  const firstCard = cardsContainer.querySelector('.card');
-  cardsContainer.appendChild(firstCard);
-  cardsContainer.style.transition = 'none';
-  cardsContainer.style.transform = 'translateX(0)';
+  const firstCard = crdcontain.querySelector('.card');
+  crdcontain.appendChild(firstCard);
+  crdcontain.style.transition = 'none';
+  crdcontain.style.transform = 'translateX(0)';
   setTimeout(slideCards, 50);
 }
 
 slideCards();
-cardsContainer.addEventListener('transitionend', handleLoop);
+crdcontain.addEventListener('transitionend', handleLoop);
 
 setInterval(slideCards, 7000);

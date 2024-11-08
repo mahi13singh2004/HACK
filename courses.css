@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #324158; 
+  background-color: #324158;
   margin: 0;
   padding: 0;
 }
@@ -9,11 +9,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.items a{
+.items a {
   text-decoration: none;
-  color:white;
-  font-size:18px;
-  font-weight:400;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 * {
@@ -32,8 +32,6 @@ body {
   height: 100vh;
 }
 
-
-
 .header {
   background-color: #333;
   padding: 15px 0;
@@ -44,7 +42,7 @@ body {
   justify-content: center;
   margin-top: 20px;
   position: relative;
-  bottom:20px;
+  bottom: 20px;
 }
 
 .nav {
@@ -76,7 +74,7 @@ body {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -97,31 +95,51 @@ body {
   justify-content: space-between;
 }
 
-.pc1, .pc2, .pc3, .pc4, .pc5, .pc6 {
+.pc1,
+.pc2,
+.pc3,
+.pc4,
+.pc5,
+.pc6 {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   margin: 15px;
   width: calc(30% - 30px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  user-select: none; 
-  -webkit-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-.pc1:hover, .pc2:hover, .pc3:hover, .pc4:hover, .pc5:hover, .pc6:hover {
-  transform: scale(1.05) translateY(-10px); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+.pc1:hover,
+.pc2:hover,
+.pc3:hover,
+.pc4:hover,
+.pc5:hover,
+.pc6:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.pc1 img, .pc2 img, .pc3 img, .pc4 img, .pc5 img, .pc6 img {
+.pc1 img,
+.pc2 img,
+.pc3 img,
+.pc4 img,
+.pc5 img,
+.pc6 img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.pc1 div, .pc2 div, .pc3 div, .pc4 div, .pc5 div, .pc6 div {
+.pc1 div,
+.pc2 div,
+.pc3 div,
+.pc4 div,
+.pc5 div,
+.pc6 div {
   padding: 15px;
 }
 
@@ -156,29 +174,38 @@ button {
 
 button:hover {
   background-color: #0056b3;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 .buy-now {
-background-color: #28a745;
-margin-left: 10px;
+  background-color: #28a745;
+  margin-left: 10px;
 }
 button {
-margin-right: 20px;
+  margin-right: 20px;
 }
 
 .buy-now:hover {
-background-color: #218838;
+  background-color: #218838;
 }
 
-
 @media screen and (max-width: 768px) {
-  .pc1, .pc2, .pc3, .pc4, .pc5, .pc6 {
-      width: calc(45% - 30px);
+  .pc1,
+  .pc2,
+  .pc3,
+  .pc4,
+  .pc5,
+  .pc6 {
+    width: calc(45% - 30px);
   }
 }
 
 @media screen and (max-width: 480px) {
-  .pc1, .pc2, .pc3, .pc4, .pc5, .pc6 {
-      width: calc(100% - 30px);
+  .pc1,
+  .pc2,
+  .pc3,
+  .pc4,
+  .pc5,
+  .pc6 {
+    width: calc(100% - 30px);
   }
 }
