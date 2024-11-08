@@ -12,6 +12,7 @@ html {
 body {
   background-color: #f4f7fa;
   color: #333;
+  overflow-x:hidden;
 }
 
 a {
